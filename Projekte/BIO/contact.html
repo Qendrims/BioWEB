@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!-- contact.html -->
+<!-- the contact page -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact</title>
+	</head>
+	
+	<body>
+		<header>
+			<img src="qslogo.jpg" alt="qslogo" width=" 80px " height="100px" >
+		</header>
+		<h1>
+			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="assigment.html">MY ASSIGMENT</a>
+			<a href="contact.html">CONTACT</a>
+		</h1>
+		<!-- inputs types to contact me -->
+
+		<p>Kjo eshte faqja ime, nese keni ndonje pytje ne lidhje me faqen time, ndonje ide ose sygjerim, ju lutem me kontaktoni me posht:
+		</p>
+		<form method="post" action="http://gmail.com"/>
+			<p>
+				<label>Name
+					<input type="text" placeholder="Name"/>
+				</label>
+			</p>
+			<p>
+				<label>Surname
+					<input type="text" placeholder="Surname"/>
+				</label>
+			</p>
+			<p>
+				<label>E-mail
+					<input type="email" placeholder="name@gmail.com" required="(name@gmail.com)"/>
+				</label>
+			</p>
+			<p><strong>Sex:</strong><br>
+				<label>Male
+					<input name="Sex" type="radio" value="Male">
+				</label>
+				<label>Female
+					<input name="Sex" type="radio" value="Female">
+				</label>
+				<label>Other
+					<input name="Sex" type="radio" value="Other">
+				</label>
+			</p>
+			<p><label>Comment:<br>
+				<textarea name="Comments"
+					rows="3" cols="27" placeholder="Enter text here."></textarea>
+			</label></p>
+			<a href="https://mail.google.com/mail/u/0/#inbox">
+				<img src=" gmail.jpg" width = "35" height="25">
+			</a>
+			<a href="https://www.facebook.com/qendrimlfc">
+				<img src=" fb.jpg" width="35" height="25">
+			</a>
+			<a href="https://www.instagram.com/qendrimsadrija/">
+				<img src="ig.jpg" width="35" height="25">
+			</a>
+		<h2>Please give us your feedback for our site:</h2>
+			<p>
+				<label><strong>Rate us:</strong>
+					<select name="rating">
+						<option selected>10</option>
+						<option>9</option>
+						<option>8</option>
+						<option>7</option>
+						<option>6</option>
+						<option>5</option>
+						<option>4</option>
+						<option>3</option>
+						<option>2</option>
+						<option>1</option>
+					</select>
+				</label>	
+			</p>
+			<p><strong>Things you liked about me:</strong><br>
+				<label>Photos 
+					<input name="Photos" type="checkbox" value="Photos">
+				</label>
+				<label>My Hobbies
+					<input name="Hobby" type="checkbox" value="Hobby">
+				</label>
+				<label>My dogs
+					<input type="checkbox" name="dogs" value="dogs">
+				</label>
+				<label>My site design
+					<input type="checkbox" name="Site design" value="design">
+				</label>
+			</p>
+			<p>
+					<input type="submit" name="Submit">
+					<input type="reset" name="Clear">
+			</p>
+			<footer>
+				 <em>&copy; 12/15/202 by Qendrim Sadrija, Inc. All Rights Reserved.</em>
+			</footer>		
+	</body>		
+</html> 

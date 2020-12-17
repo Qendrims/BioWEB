@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.17: multicolums.html -->
+<!-- Multicolums text in CSS3 -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Multicolums</title>
+		<style type="text/css">
+			p
+			{margin: 0.9em 0em; }
+			.multicolums
+			{
+				/*setting the number of colums to 3 */
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				-o-column-count: 3;
+				/* setting the space between colums to 30px*/
+				-webkit-column-gap: 30px;
+				-moz-column-gap: 30px;
+				-o-column-gap: 30px;
+				column-gap: 30px;
+				/*adding a 1px black line between each column*/
+				-webkit-column-rule: 1px outset black;
+				-moz-column-rule: 1px outset black;
+				-o-column-rule: 1px outset black;
+				column-rule: 1px outset black;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Computers,Hardware and Software</h1>
+		</header>
+		<div class="multicolums">
+			<p>HTML is the core of every website. It contains every 	
+				element a page contains: images, paragraphs, titles and other tags. We have a free tutorial series that will help you get started learning this essential markup (not programming) language. The lessons contain articles about tags, tag attributes, a list of important tags, links or anchor tags, images, tables, forms, text formatting and characters.</p>
+			<p>Cascading Style Sheets give the look of you web pages. They 
+				specify the color and size of each element. They position the sections on the page and specify other design attributes. They are placed in .css file extensions and linked to the documents. The CSS cheat sheet will give you an idea about what this really means and will help you easily generate the desired styles.</p>
+			<p>Often confused with the Java programming language, the
+				 JavaScript or simply JS makes your site interactive. If you know HTML, CSS and JavaScript you can start developing simple online games. JS is used to validate forms before submitting, to animate slideshows, and to bring the site alive.We have JS editor and compressor and even a blog about the topic. Check them out and use them on a daily basis to make your life easier.We are experts in HTML, CSS and JavaScript. Nobody knows better them than we do. They together provide the client-side of the web and we're going to make your life easier if you're going to use our online tool collection. We've spent countless hours to become the very best in the field.</p>
+			<footer>
+				 <em>&copy; 2020 by Pearson Education, Inc. All Rights Reserved.</em>
+			</footer>	
+		</div>
+	</body>
+</html>

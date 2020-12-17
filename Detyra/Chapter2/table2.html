@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.13: Table2.html -->
+<!-- Complex HTML5 table. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tables2</title>
+	</head>
+	
+	<body>
+		<h1> Table Example: Spanning Rows and Colums </h1>
+
+		<table border="1">
+			<caption> A more complex sample table</caption>
+
+			<thead>
+				<!-- rowspans and colspans merge the specified -->
+				<!-- number of cells vertically or horizontally -->
+				<tr>
+					<!-- merge two rows -->
+					<th rowspan="3">
+						<img src="Pit.png" width="205"
+						height="167" alt="Picture of pitbull">
+					</th>
+					
+					<!-- merge four colums-->
+					<th colspan="4">
+						<strong>Pitbulls & Amsaff</strong>
+					</th>		
+				</tr>
+				<tr>
+					<th>Note</th>
+					<th>Region</th>
+					<th>Barks?</th>
+					<th>Cute</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Pitbull</th>
+					<td>10</td>
+					<td>Europe/Usa</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+				<tr>
+					<th>Amstaff</th>
+					<td>10</td>
+					<td>Europe/Usa/Australia</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+			</tbody>
+		</table>	
+</body>
+</html>
