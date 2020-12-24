@@ -1,0 +1,32 @@
+h1 {
+	text-align: left;
+	font-family: fantasy;
+	padding: 50px;
+	background-color: #1e3c4c;
+	-webkit-color: white;
+	width: 100%;
+	font-size: 20px;
+}
+body {
+	background-color: #b7e9c2;
+	text-align: center;
+}
+footer {
+	background-color: #1e3c4c;
+	color: white;
+	text-align: right;
+	padding: 20px; 
+}
+p {
+	font-size: 25px;
+	text-align: center;
+	margin: 70px 300px 70px 300px;
+}
+.class {
+	color: black;
+}
+.link a{
+	color:#b7e9c2;
+	text-decoration: none;
+	font-family: arial;
+}
