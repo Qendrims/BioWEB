@@ -1,21 +1,27 @@
-h1 {
+nav {
 	text-align: left;
 	font-family: fantasy;
 	padding: 50px;
 	background-color: #1e3c4c;
 	-webkit-color: white;
 	width: 100%;
-	font-size: 20px;
+	font-size: 15px;
+	word-spacing: 1cm;
+	position: sticky;
 }
 body {
 	background-color: #b7e9c2;
 	text-align: center;
+
 }
 footer {
 	background-color: #1e3c4c;
 	color: white;
 	text-align: right;
-	padding: 20px; 
+	padding: 20px;
+	font-size: 20px;
+	width: 100%; 
+
 }
 p {
 	font-size: 25px;
@@ -29,4 +35,49 @@ p {
 	color:#b7e9c2;
 	text-decoration: none;
 	font-family: arial;
+}
+
+
+div {
+		border: 7px solid #1e3c4c;
+		padding: 20px 150px;
+		font-size: 25px;
+		width: 200px;
+		text-align: center;
+		border-radius: 90px;
+		margin: auto;
+		width: 20%
+			}
+@media  screen and (max-width: 780px) {
+	nav { width: 100%;
+		   }
+	body { text-align: center;
+			width: auto; }	   	
+
+	div { border: 29px solid #1e3c4c; 
+		  font-size: 30px;
+		  width: 50%;
+		  padding: 35px 170px;
+		  position: center;
+		    }
+  	  .me { width: 100%;
+		  		margin: 30px; }	
+	footer {
+		width: 100%
+		font-size: 40px;
+		padding: 70px;
+	}
+	.gmail { width: 55px;
+			height: 35px; }
+}
+	.fb  { width: 55px;
+			height: 35px; }
+}
+	.ig  { width: 55px;
+			height: 35px; }
+}
+@media  screen and ( max-width: 500px) {
+	div , .me {
+		width: 100%;
+	}
 }

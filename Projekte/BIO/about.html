@@ -4,8 +4,10 @@
 <!--This page you have some information -->
 <html>	
 	<head>
+	<meta charset="utf-8">	
 	<title>About</title>
-
+	<link rel="stylesheet" type="text/css" href="aboutstyle.css">
+	<meta name="viewport" content="width=device-widht, initial-scale=1.0">
 	<style>
 	table, th, td {
 		border: 1px solid black
@@ -13,17 +15,17 @@
 	</style>
 	</head>
 	<body>
-		<header>
-			<img src="qslogo.jpg" alt="qslogo" width=" 80px " height="100px" >
-		</header>
-		<h1>
+		
+		<nav class="link1">
 			<a href="index.html">HOME</a>
 			<a href="about.html">ABOUT</a>
-			<a href="assigment.html">MY ASSIGMENT</a>
+			<a href="assigment.html">ASSIGMENT</a>			
+			<a href="Pg5.html">FAVORITES</a>
 			<a href="contact.html">CONTACT</a>
-		</h1>
+		</nav>
+		
 		<!-- Table with some important infos -->
-	<table style="width: 45%">
+	<table id="table">
 		<thead> 
 			<tr>
 				<th>Ipmortant Informations</th>
@@ -57,12 +59,25 @@
 		</tbody>
 	</table>
 			<p>
-			I am Qendrim Sadrija, 21 years old, student of Computer Science at 'Universum' College. This is my personal page and at the same time the first for me. I live and work in Prishtina. I work as a shooting agent for a period of close to 2 years. I like nature and animals.
-		</p>
-		<!-- Here are photo of weekend activity-->
-			<img src="dogs.jpg" alt="me&dogs">
-			<img src="nature.jpg" alt="me&nature">
+			I am Qendrim Sadrija, 21 years old, student of Computer Science at 'Universum' College. This is my personal page and at the same time the first for me. I live and work in Prishtina. I work as a shooting agent for a period of close to 2 years.One day a want to be a <b>Full Stack Developer</b>. I have a dog, named Ellio.
+			</p>
+			<div>
+				<h2>MyFavorites:</h2>
+					DogWalking<img class="img1" src="dogs.jpg" alt="me&dogs">
+					Hiking<img class="img2" src="nature.jpg" alt="me&nature">
+					WatchingFootball<img class="img3" src="lfc.jpg" alt="liverpool">	
+			</div>
+		<!-- Here are photo of weekend activity-->			
 			<footer>
+				<a href="https://mail.google.com/mail/u/0/#inbox">
+				<img src=" gmail.jpg" width = "35" height="25">
+			</a>
+			<a href="https://www.facebook.com/qendrimlfc">
+				<img src=" fb.jpg" width="35" height="25">
+			</a>
+			<a href="https://www.instagram.com/qendrimsadrija/">
+				<img src="ig.jpg" width="35" height="25">
+			</a>
 				 <em>&copy; 12/15/202 by Qendrim Sadrija, Inc. All Rights Reserved.</em>
 			</footer>
 	</body>
