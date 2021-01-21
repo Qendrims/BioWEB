@@ -4,15 +4,22 @@ nav {
 	padding: 50px;
 	background-color: #1e3c4c;
 	-webkit-color: white;
-	width: 100%;
 	font-size: 15px;
 	word-spacing: 1cm;
-	position: sticky;
 }
 .link1 a{
 	color:#b7e9c2;
 	text-decoration: none;
 	font-family: arial;
+}
+label {
+	margin-left: 1px;
+	font-size: 25px;
+	display: none;
+	float: left;
+}
+#toggle {
+	display: none;
 }
 footer {
 	background-color: #1e3c4c;
@@ -27,7 +34,8 @@ body {
 .img1 {
 	border: 1px solid black;
 	margin-bottom: auto;
-	width: 150px  
+	width: 150px 
+	height:1600PX; 
 
 }
 .img2 {
@@ -38,7 +46,7 @@ body {
 	border: 1px solid black;
 	width: 150px	
 }
-p {
+.p1 {
 	border: 1px ridge #070f05;
 	font-size: 25px;
 	text-align: left;
@@ -72,36 +80,61 @@ div {
 }
 
 @media only screen and (max-width: 780px) {
-	nav  { width: 100%;
-}
+	.link1 {
+		text-align: left;
+		width: 100%;
+		display: none;		
+	}
+	.link1 a {
+		display: block;
+		/*border-bottom: 1px solid grey;*/
+		margin: 0;
+	}
+
 	#table { 
 		   width: 100%;
-		   font-size: 25px; }
+		   font-size: 25px; }label {
+		display: block;
+		cursor: pointer;
+	}
+	#toggle:checked + .link {
+		display: block;
+	}
+	
+	label {
+		display: block;
+		cursor: pointer;
+		color: white;
+	}
+	#toggle:checked + .link1 {
+		display: block;
+	}
+		   
 
-	p {
+	.p1 {
 		border: 3px ridge #070f05;
 		font-size: 30px;
 		padding: 20px 20px 20px 20px;
 		width: 80%
 		margin: center;
 	}
+ 	.images {
+ 		width: 70%;
+ 		margin: auto;
+ 		position: unset;
 
+ 	}
 	.img1 , .img2 , .img3 {
-		width: 80%;
-		height: 500px;
+		width: 100%;
+		height: 100%;
+		
 	}
 	footer {
 		width: 100%
-		font-size: 40px;
-		padding: 70px;
+		font-size: 20px;
+		padding: 50px;
 	}
 	body {
 		position: relative; 
 	}	   
-}
-@media only screen and (max-width: 500px) {
-
-	p , .img1 , .img2 , .img3 {
-	width: 100%
-}
 }

@@ -1,10 +1,9 @@
-nav {
+.link4 {
 	text-align: left;
 	font-family: fantasy;
 	padding: 50px;
 	background-color: #1e3c4c;
 	-webkit-color: white;
-	width: 100%;
 	font-size: 15px;
 	word-spacing: 1cm;
 	position: sticky;
@@ -28,3 +27,33 @@ footer {
 	text-decoration: none;
 	font-family: arial;
 }
+.lbl {
+	margin-left: 1px;
+	font-size: 25px;
+	display: none;
+	float: left;
+}
+#toggle2 {
+	display: none;
+}
+@media  screen and (max-width: 780px) {
+	.link4 {
+		text-align: left;
+		width: 100%;
+		display: none;		
+	}
+	.link4 a {
+		display: block;
+		/*border-bottom: 1px solid grey;*/
+		margin: 0;
+	}
+	 .lbl {
+		display: block;
+		cursor: pointer;
+		color: white;
+	}
+	#toggle2:checked + .link {
+		display: block;
+	}
+}
+

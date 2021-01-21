@@ -1,10 +1,9 @@
-nav {
+.link3 {
 	text-align: left;
 	font-family: fantasy;
 	padding: 50px;
 	background-color: #1e3c4c;
 	-webkit-color: white;
-	width: 100%;
 	font-size: 15px;
 	word-spacing: 1cm;
 	position: sticky;
@@ -14,19 +13,19 @@ body {
 	text-align: center;
 
 }
-footer {
-	background-color: #1e3c4c;
-	color: white;
-	text-align: right;
-	padding: 20px; 
-  position: relative;
-  margin-top: 350px;
-
-}
 .link3 a {
 	color: #b7e9c2;
 	text-decoration: none;
 	font-family: arial;
+}
+label {
+  margin-left: 1px;
+  font-size: 25px;
+  display: none;
+  float: left;
+}
+#toggle {
+  display: none;
 }
 .dropbutton {
   background-color: #1e3c4c;
@@ -68,13 +67,37 @@ footer {
 .dropdown:hover .dropbutton {
   background-color: #1e3c4c;
 }
+footer {
+  background-color: #1e3c4c;
+  color: white;
+  text-align: right;
+  padding: 20px; 
+  position: relative;
+  margin-top: 350px;
+  }
 
 @media only screen and (max-width: 780px) {
-  nav {
+.link3 {
+    text-align: left;
     width: 100%;
-    padding: 70px;
+    display: none;    
+  }
+  .link3 a {
+    display: block;
+    /*border-bottom: 1px solid grey;*/
+    margin: 0;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+  #toggle:checked + .link3 {
+    display: block;
   }
   .dropbutton {
-    font-size: 30px;
+    font-size: 15px;
+    min-width: 100px;
+    margin: auto;
   }
-}
+ 
