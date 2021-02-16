@@ -4,7 +4,7 @@ body {
 .link5 {
 	text-align: left;
 	font-family: fantasy;
-	padding: 20px;
+	padding: 50px;
 	background-color: #1e3c4c;
 	-webkit-color: white;
 	font-size: 15px;
@@ -239,7 +239,8 @@ footer {
 		cursor: pointer;
 		color: white;
 		margin-top: -14px;
-   		position: sticky;
+		position: sticky;
+		z-index: 9999;
 }
 	}
 	#toggle:checked + .link5 {

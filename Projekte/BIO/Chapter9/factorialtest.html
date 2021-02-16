@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!-- Fig. 9.12: factorialtest.html -->
+<!-- Factorial calculation with a recursive function. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recursive Factorial Function</title>
+        <style>
+            p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Factorials of 0 to 10</h1>
+        <div id="results"></div>
+
+        <script>
+            var output = "";
+
+            function calculateFactorialIs() {
+                for ( var i = 0; i <= 10; ++i )
+                    output += "<p>" + i + "! = " + factorial(i) + "</p>";
+                
+                document.getElementById("results").innerHTML = output;
+            }
+
+            function factorial( number ) {
+                if ( number <= 1 )
+                    return 1;
+                else
+                    return number * factorial( number - 1 );
+            }
+
+            window.addEventListener( "load", calculateFactorialIs, false);
+        </script>
+    </body>
+</html>

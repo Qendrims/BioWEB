@@ -51,8 +51,9 @@ footer {
 		display: block;
 		cursor: pointer;
 		color: white;
+		z-index: 9999;
 	}
-	#toggle2:checked + .link {
+	#toggle2:checked + .link4 {
 		display: block;
 	}
 }
